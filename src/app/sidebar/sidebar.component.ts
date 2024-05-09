@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProjectComponent } from '../project/project.component';
+import { JobComponent } from '../job/job.component';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterOutlet, ProjectComponent],
+  imports: [RouterOutlet, JobComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })

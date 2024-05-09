@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 
 @Component({
-  selector: 'app-project',
+  selector: 'app-job',
   standalone: true,
   imports: [CardComponent],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+  templateUrl: './job.component.html',
+  styleUrl: './job.component.css'
 })
-export class ProjectComponent {
+export class JobComponent {
 
 }
