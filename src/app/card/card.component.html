@@ -1,0 +1,11 @@
+<div class="max-w-sm w-full lg:max-w-full rounded-lg text-slate-800 p-5 border border-solid border-gray-200 
+hover:bg-slate-800 hover:text-white transition ease-in-out delay-150 hover:scale-105 flex group mb-3" *ngFor="let item of experiencia">
+    <!--<h1 class="text-l">proyecto</h1>-->
+    <div class="w-1/4 lg:mr-3">
+        <h2>{{item.fecha}}</h2>
+    </div>
+    <div class="w-3/4">
+        <h1 class="mb-3 text-xl group-hover:text-green-300 transition ease-in-out delay-00">{{item.titulo}}</h1>
+        <p>{{item.texto}}</p>
+    </div>
+</div>
