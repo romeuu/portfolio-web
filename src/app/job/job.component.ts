@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../card/card.component';
+import { JobCardComponent } from '../job-card/job-card.component';
 
 @Component({
   selector: 'app-job',
   standalone: true,
-  imports: [CardComponent],
+  imports: [JobCardComponent],
   templateUrl: './job.component.html',
   styleUrl: './job.component.css'
 })

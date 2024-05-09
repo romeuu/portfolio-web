@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-job-card',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
+  templateUrl: './job-card.component.html',
+  styleUrl: './job-card.component.css'
 })
-export class CardComponent implements OnInit {
+export class JobCardComponent implements OnInit {
   experiencia: any;
   
   ngOnInit(): void {
