@@ -1,11 +1,22 @@
 <div class="max-w-sm w-full lg:max-w-full rounded-lg text-slate-800 p-5 border border-solid border-gray-200 
-hover:bg-slate-800 hover:text-white transition ease-in-out delay-150 hover:scale-105 flex group mb-3" *ngFor="let item of experiencia">
+hover:bg-slate-800 hover:text-white transition ease-in-out hover:scale-105 flex group mb-5" *ngFor="let item of experiencia">
     <!--<h1 class="text-l">proyecto</h1>-->
     <div class="w-1/4 lg:mr-3">
-        <h2>{{item.fecha}}</h2>
+        <h2 class="group-hover:text-green-300 transition ease-in-out">{{item.fecha}}</h2>
     </div>
     <div class="w-3/4">
-        <h1 class="mb-3 text-xl group-hover:text-green-300 transition ease-in-out delay-00">{{item.titulo}}</h1>
-        <p>{{item.texto}}</p>
+        <h2 class="mb-3 text-xl group-hover:text-green-300 transition ease-in-out" *ngIf="item.subtitulo == null">
+            {{item.titulo}}
+        </h2>
+        <h2 class="text-xl group-hover:text-green-300 transition ease-in-out" *ngIf="item.subtitulo != null">
+            {{item.titulo}}
+        </h2>
+        <h3 *ngIf="item.subtitulo != null" class="text-slate-500 group-hover:text-green-100 mb-3">{{item.subtitulo}}</h3>
+        <p class="group-hover:text-white">{{item.texto}}</p>
+        <ul class="mt-5 flex flex-wrap">
+            <li *ngFor="let tec of item.tecnologias">
+                <div class="border border-solid border-green-300 bg-green-300 mr-2 mt-2 mb-2 rounded-3xl pl-3 pr-3 pt-1 pb-1 group-hover:bg-slate-800 group-hover:border-green-300 group-hover:text-green-300 transition ease-in-out flex items-center">{{tec}}</div>
+            </li>
+        </ul>
     </div>
 </div>
