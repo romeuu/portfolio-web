@@ -41,6 +41,13 @@ export class ProjectCardComponent {
         "subtitulo": 'Desarrollo web',
         "texto": 'Queríamos conseguir una web que nos consiguiese clientes, y fuese sencilla, pero a la vez, que tuviese un toque de estilo. Esto nos permitió conseguir +10 clientes satisfechos, brindándoles soluciones digitales que ayudaron a sus negocios y permitieron potenciar su digitalización.',
         "tecnologias": ["PHP (7/8)", "WordPress", "TypeScript", "JavaScript", "HTML & CSS", "SQL"]
+      },
+      {
+        "imagen": '/assets/img/cryptopy-proyecto.png',
+        "nombre": 'CryptoPY',
+        "subtitulo": 'Scripting',
+        "texto": 'CryptoPY fue un proyecto que realicé en 2020, consistiendo en un script que compara el precio de 5 criptomonedas, para así enviar una alerta en caso de que suban o bajen a una cantidad determinada que especifique el usuario. Esta alerta sería a través de un mail.',
+        "tecnologias": ["Python"]
       }
     ]
   }
