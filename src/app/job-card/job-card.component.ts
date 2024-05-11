@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { TechCardComponent } from '../tech-card/tech-card.component';
 
 @Component({
   selector: 'app-job-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TechCardComponent],
   templateUrl: './job-card.component.html',
   styleUrl: './job-card.component.css'
 })

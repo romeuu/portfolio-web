@@ -3,11 +3,12 @@ import { RouterOutlet, Router } from '@angular/router';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewportScroller } from "@angular/common";
 import { JobComponent } from './job/job.component';
+import { ProjectComponent } from './project/project.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidebarComponent, JobComponent],
+  imports: [RouterOutlet, SidebarComponent, JobComponent, ProjectComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
