@@ -6,10 +6,10 @@ hover:bg-slate-800 hover:text-white transition ease-in-out hover:scale-105 lg:fl
     </div>
     <div class="lg:w-3/4">
         <h2 class="mb-3 text-xl group-hover:text-green-300 transition ease-in-out" *ngIf="item.subtitulo == null">
-            {{item.titulo}}
+            <a href="{{item.link}}" target="_blank" rel="noreferrer">{{item.titulo}}</a>
         </h2>
         <h2 class="text-xl group-hover:text-green-300 transition ease-in-out" *ngIf="item.subtitulo != null">
-            {{item.titulo}}
+            <a href="{{item.link}}" target="_blank" rel="noreferrer">{{item.titulo}}</a>
         </h2>
         <h3 *ngIf="item.subtitulo != null" class="text-slate-500 group-hover:text-green-100 mb-3">{{item.subtitulo}}</h3>
         <p class="group-hover:text-white">{{item.texto}}</p>
