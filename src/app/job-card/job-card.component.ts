@@ -16,7 +16,7 @@ export class JobCardComponent implements OnInit {
       {
         "fecha": "2020-2023",
         "titulo": 'Desarrollador web - Tecalis Software',
-        "subtitulo": 'Desarrollador web junior',
+        "subtitulo": 'Anteriormente: Desarrollador web junior',
         "texto": "Con experiencia notable en el sector de las telecomunicaciones en España, me centré en la creación y mantenimiento de componentes y flujos críticos, como la firma electrónica, para las principales compañías del sector. Mi enfoque estaba centrado en la optimización de la eficiencia, seguridad y usabilidad de mi código, llegando así a crear componentes nuevos, pero fiables. Además, conseguí aportar mis conocimientos y habilidades para impulsar el lanzamiento de soluciones digitales propietarias.",
         "tecnologias": ["PHP (Laravel & Symfony)", "Angular", "TypeScript", "JavaScript", "HTML & CSS", "Ionic", "SQL"]
       },

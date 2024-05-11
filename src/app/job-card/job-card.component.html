@@ -1,10 +1,10 @@
 <div class="max-w-sm w-full lg:max-w-full rounded-lg text-slate-800 p-5 border border-solid border-gray-200 
-hover:bg-slate-800 hover:text-white transition ease-in-out hover:scale-105 flex group mb-5" *ngFor="let item of experiencia">
+hover:bg-slate-800 hover:text-white transition ease-in-out hover:scale-105 lg:flex group mb-5" *ngFor="let item of experiencia">
     <!--<h1 class="text-l">proyecto</h1>-->
-    <div class="w-1/4 lg:mr-3">
+    <div class="lg:w-1/4 lg:mr-3 lg:mb-0 xs:mb-3">
         <h2 class="group-hover:text-green-300 transition ease-in-out">{{item.fecha}}</h2>
     </div>
-    <div class="w-3/4">
+    <div class="lg:w-3/4">
         <h2 class="mb-3 text-xl group-hover:text-green-300 transition ease-in-out" *ngIf="item.subtitulo == null">
             {{item.titulo}}
         </h2>
