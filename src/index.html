@@ -10,5 +10,17 @@
 </head>
 <body>
   <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).mousemove(function(event) {
+      windowWidth = $(window).width();
+      windowHeight = $(window).height();
+      
+      mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+      mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+      
+      $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #fffbeb, #f0fdf4)');
+    });
+  </script>
 </body>
 </html>
