@@ -1,22 +1,38 @@
-<div class="lg:max-w-full rounded-lg hover:text-slate-800 p-5 border border-solid border-green-300 
-bg-slate-800 text-white transition hover:bg-transparent ease-in-out hover:scale-105 lg:flex group mb-5 gap-4 shadow-lg" *ngFor="let item of proyectos">
-
-    <div class="lg:w-1/4 lg:mr-5 lg:mb-0 xs:mb-3">
-        <img src="{{item.imagen}}" alt="">
-    </div>
-    <div class="lg:w-3/4">
-        <h2 class="mb-3 text-xl group-hover:text-slate-800 transition ease-in-out" *ngIf="item.subtitulo == null">
-            <a href="{{item.link}}" target="_blank" rel="noreferrer">{{item.nombre}}</a>
-        </h2>
-        <h2 class="text-xl group-hover:text-slate-800 transition ease-in-out" *ngIf="item.subtitulo != null">
-            <a href="{{item.link}}" target="_blank" rel="noreferrer">{{item.nombre}}</a>
-        </h2>
-        <h3 *ngIf="item.subtitulo != null" class="text-slate-500 group-hover:text-slate-700 mb-3">{{item.subtitulo}}</h3>
-        <p class="group-hover:text-slate-800">{{item.texto}}</p>
-        <ul class="mt-5 flex flex-wrap">
-            <li *ngFor="let tec of item.tecnologias">
-                <app-tech-card [tec]="tec" class="text-slate-800"></app-tech-card>
-            </li>
-        </ul>
-    </div>
+<div
+  class="lg:max-w-full rounded-lg hover:text-slate-800 p-5 border border-solid border-green-300 bg-slate-800 text-white transition hover:bg-transparent ease-in-out hover:scale-105 lg:flex group mb-5 gap-4 shadow-lg"
+  *ngFor="let item of proyectos"
+>
+  <div class="lg:w-1/4 lg:mr-5 lg:mb-0 xs:mb-3">
+    <img src="{{ item.imagen }}" alt="" />
+  </div>
+  <div class="lg:w-3/4">
+    <h2
+      class="mb-3 text-xl group-hover:text-slate-800 transition ease-in-out"
+      *ngIf="item.subtitulo == null"
+    >
+      <a href="{{ item.link }}" target="_blank" rel="noreferrer">{{
+        item.nombre
+      }}</a>
+    </h2>
+    <h2
+      class="text-xl group-hover:text-slate-800 transition ease-in-out"
+      *ngIf="item.subtitulo != null"
+    >
+      <a href="{{ item.link }}" target="_blank" rel="noreferrer">{{
+        item.nombre
+      }}</a>
+    </h2>
+    <h3
+      *ngIf="item.subtitulo != null"
+      class="text-green-300 group-hover:text-slate-700 mb-3"
+    >
+      {{ item.subtitulo }}
+    </h3>
+    <p class="group-hover:text-slate-800">{{ item.texto }}</p>
+    <ul class="mt-5 flex flex-wrap">
+      <li *ngFor="let tec of item.tecnologias">
+        <app-tech-card [tec]="tec" class="text-slate-800"></app-tech-card>
+      </li>
+    </ul>
+  </div>
 </div>
